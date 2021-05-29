@@ -19,7 +19,8 @@ atom-text-editor {
 .syntax--storage,
 .syntax--storage.syntax--type.syntax--class,
 .syntax--storage.syntax--type.syntax--function,
-.syntax--support.syntax--function {
+.syntax--support.syntax--function,
+.syntax--keyword.syntax--operator.syntax--setter {
   color: var(--color-cyan);
   filter: brightness(1.5);
 }
@@ -32,7 +33,8 @@ atom-text-editor {
 
 .syntax--entity.syntax--name.syntax--class,
 .syntax--entity.syntax--name.syntax--type.syntax--class,
-.syntax--entity.syntax--name.syntax--function {
+.syntax--entity.syntax--name.syntax--function,
+.syntax--meta.syntax--class {
   color: var(--color-green);
 }
 
@@ -47,9 +49,11 @@ atom-text-editor {
   color: var(--color-orange);
 }
 
-.syntax--constant.syntax--numeric {
+.syntax--constant.syntax--numeric,
+.syntax--constant.syntax--language.syntax--boolean,
+.syntax--constant.syntax--language.syntax--null {
   color: var(--color-violet);
-  filter: brightness(1.7);
+  filter: brightness(1.6);
 }
 
 
@@ -57,15 +61,16 @@ atom-text-editor {
   color: var(--color-yellow);
 }
 
-
+.syntax--constant.syntax--other,
 .syntax--variable {
   color: var(--color-light);
 }
 
 
 .syntax--comment {
-  color: #98c37999;
+  color: var(--color-green);
   font-style: italic;
+  filter: opacity(0.4) brightness(1.6);
 }
 
 
