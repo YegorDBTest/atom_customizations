@@ -1,0 +1,82 @@
+:root {
+  --color-red: #d4392d;
+  --color-orange: #d4812d;
+  --color-yellow: #d4c22d;
+  --color-green: #80c229;
+  --color-cyan: #1b7f7f;
+  --color-violet: #68248d;
+  --color-light: #dddddd;
+  --color-dark: #222222;
+}
+
+
+atom-text-editor {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+
+.syntax--storage,
+.syntax--storage.syntax--type.syntax--class,
+.syntax--storage.syntax--type.syntax--function,
+.syntax--support.syntax--function {
+  color: var(--color-cyan);
+  filter: brightness(1.5);
+}
+.syntax--storage,
+.syntax--storage.syntax--type.syntax--class,
+.syntax--storage.syntax--type.syntax--function {
+  font-style: italic;
+}
+
+
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class,
+.syntax--entity.syntax--name.syntax--function {
+  color: var(--color-green);
+}
+
+
+.syntax--keyword.syntax--control,
+.syntax--keyword.syntax--operator {
+  color: var(--color-red);
+}
+
+
+.syntax--variable.syntax--parameter.syntax--function {
+  color: var(--color-orange);
+}
+
+.syntax--constant.syntax--numeric {
+  color: var(--color-violet);
+  filter: brightness(1.7);
+}
+
+
+.syntax--string.syntax--quoted {
+  color: var(--color-yellow);
+}
+
+
+.syntax--variable {
+  color: var(--color-light);
+}
+
+
+.syntax--comment {
+  color: #98c37999;
+  font-style: italic;
+}
+
+
+.syntax--markup.syntax--heading {
+  color: #ffb440;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.spell-check-misspelling .region {
+  // border-bottom: 1px dotted #ff837380;
+  border: none;
+}
